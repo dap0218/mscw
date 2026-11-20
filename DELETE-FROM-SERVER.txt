@@ -1,0 +1,27 @@
+Files no longer used after the DBIM redesign.
+If you deploy mscw-dbim-changed-files.zip on top of the existing site, delete these
+from the server (the full zip already leaves them out):
+
+js/acsbty.js                  old top toolbar (font size, contrast, magnifier) - replaced by the accessibility panel
+js/footer-date.js             old footer date - now in js/dbim.js
+js/slider-init.js             old home slider - replaced by js/home.js
+images/play.png               old magnifier on/off icons
+images/pause.png
+images/themes.gif             old slider arrows
+images/logo.png               old header logo - replaced by images/mscw-emblem.png + text
+images/nic-footer-logo.png    old footer logo
+images/increase_16.png        old toolbar icons (A+ / A- / A and colour schemes) - the Help page
+images/decrease_16.png        now describes the accessibility panel instead
+images/normal_16.png
+images/standard.png
+images/yellow_black.png
+images/black_white_16.png
+
+All pages are now .html instead of .htm.
+After uploading the new .html pages, delete every old *.htm page from the server
+(e.g. home.htm, about_MSCW.htm ...). web.config now sends any old .htm address
+to the matching .html page with a permanent (301) redirect, so bookmarks and
+search-engine links keep working.
+
+If the server's default document is set to home.htm, change it to home.html
+(IIS Manager > the site > Default Document).

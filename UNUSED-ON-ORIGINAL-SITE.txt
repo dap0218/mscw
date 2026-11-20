@@ -1,0 +1,180 @@
+Files that were ALREADY unused on the original site (before the redesign).
+Nothing links to them. They were NOT deleted - review and remove if not needed.
+
+css/  (2 files)
+    lity.min.css
+    simplelightbox.css
+
+documents/  (2 files)
+    cases.pdf
+    members2013.pdf
+
+images/  (25 files)
+    7.jpg
+    Thumbs.db
+    bg.png
+    button-search.png
+    ccc.ht10.jpg
+    ccc.ht11.jpg
+    ccc.ht2.jpg
+    ccc.ht3.jpg
+    ccc.ht4.jpg
+    ccc.ht5.jpg
+    ccc.ht6.jpg
+    ccc.ht7 (1).jpg
+    ccc.ht7.jpg
+    ccc.ht8.jpg
+    ccc.ht9.jpg
+    head.jpg
+    logo.jpg
+    pic10.jpg
+    pic10_cropted.jpg
+    pic11.jpg
+    pic11_crop.jpg
+    pic5.jpg
+    pic5_crop.jpg
+    pic8.jpg
+    pic8_cropted.jpg
+
+js/  (4 files)
+    jquery-1.8.3.min.js
+    jquery-3.6.0.min.js
+    lity.min.js
+    simple-lightbox.min.js
+
+photos/campaign2014/  (1 files)
+    48.jpg
+
+photos/cbp/rbd/  (9 files)
+    21.jpg
+    25.jpg
+    26.jpg
+    27.jpg
+    28.jpg
+    29.jpg
+    30.jpg
+    31.jpg
+    32.jpg
+
+photos/cbp/swgh/  (2 files)
+    1.jpg
+    21.jpg
+
+photos/cbp/swkh/  (1 files)
+    21.jpg
+
+photos/cbp/wgh/  (2 files)
+    1.jpg
+    21.jpg
+
+photos/cbp/wjh/  (1 files)
+    21.jpg
+
+photos/cbp/wkh/  (7 files)
+    1.jpg (21).JPG
+    1.jpg (22).JPG
+    1.jpg (23).JPG
+    1.jpg (24).JPG
+    21.jpg
+    25.jpg
+    26.jpg (30).JPG
+
+photos/flashmob/garo/  (1 files)
+    21.jpg
+
+photos/flashmob/nongstoin/  (1 files)
+    21.jpg
+
+photos/independent-inquiry-pg/  (1 files)
+    3.jpg
+
+photos/roadshow/  (2 files)
+    21.jpg
+    Thumbs.db
+
+photos/sensitisation-programme/  (1 files)
+    5.jpg
+
+photos/state-level-convergence-workshop/  (1 files)
+    48.jpg
+
+photos/thumb/campaign2014/  (1 files)
+    48.jpg
+
+photos/thumb/cbp/rbd/  (9 files)
+    21.jpg
+    25.jpg
+    26.jpg
+    27.jpg
+    28.jpg
+    29.jpg
+    30.jpg
+    31.jpg
+    32.jpg
+
+photos/thumb/cbp/swgh/  (2 files)
+    1.jpg
+    21.jpg
+
+photos/thumb/cbp/swkh/  (1 files)
+    21.jpg
+
+photos/thumb/cbp/wgh/  (2 files)
+    1.jpg
+    21.jpg
+
+photos/thumb/cbp/wjh/  (1 files)
+    21.jpg
+
+photos/thumb/cbp/wkh/  (7 files)
+    1.jpg (21).JPG
+    1.jpg (22).JPG
+    1.jpg (23).JPG
+    1.jpg (24).JPG
+    21.jpg
+    25.jpg
+    26.jpg (30).JPG
+
+photos/thumb/flashmob/garo/  (1 files)
+    21.jpg
+
+photos/thumb/flashmob/nongstoin/  (1 files)
+    21.jpg
+
+photos/thumb/independent-inquiry-pg/  (1 files)
+    3.jpg
+
+photos/thumb/roadshow/  (2 files)
+    21.jpg
+    Thumbs.db
+
+photos/thumb/sensitisation-programme/  (1 files)
+    5.jpg
+
+photos/thumb/state-level-convergence-workshop/  (1 files)
+    48.jpg
+
+photos/women-day2013/JPEG/  (23 files)
+    1.jpg
+    10.jpg
+    11.jpg
+    12.jpg
+    13.jpg
+    14.jpg
+    15.jpg
+    16.jpg
+    17.jpg
+    18.jpg
+    19.jpg
+    2.jpg
+    20.jpg
+    21.jpg
+    22.jpg
+    23.jpg
+    3.jpg
+    4.jpg
+    5.jpg
+    6.jpg
+    7.jpg
+    8.jpg
+    9.jpg

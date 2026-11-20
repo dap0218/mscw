@@ -1,0 +1,191 @@
+/* =========================================================
+   ARCHIVE.CSS — Meghalaya State Commission for Women
+   Archives page (archive.htm), adapted from the Personnel & AR
+   archive page. Used with js/archive.js. DBIM tokens from dbim.css.
+   ========================================================= */
+.archive-page .archive-intro { display: block; margin: 0 0 2.4rem; font-size: var(--dbim-fs-p1); line-height: 1.6; }
+
+/* ---------- Search / filter bar ---------- */
+#archive .archive-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1fr)) minmax(0, .9fr);
+  gap: 1.2rem;
+  align-items: end;
+  margin: 0 0 2rem;
+  padding: 2rem;
+  background: var(--dbim-section-bg);
+  border: 1px solid var(--dbim-azureish-white);
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+#archive .archive-field label {
+  display: block;
+  margin-bottom: .8rem;
+  color: var(--dbim-dark-text);
+  font-size: var(--dbim-fs-p1);
+  font-weight: 700;
+  line-height: 1.4;
+}
+#archive .archive-field input,
+#archive .archive-field select,
+#archive .archive-field button {
+  width: 100%;
+  height: 4.8rem;
+  margin: 0;
+  padding: .8rem 1.4rem;
+  box-sizing: border-box;
+  border: 2px solid var(--dbim-grey-03);
+  border-radius: .6rem;
+  background: var(--dbim-white);
+  color: var(--dbim-dark-text);
+  font: inherit;
+  font-size: var(--dbim-fs-p1);
+  line-height: 1.4;
+}
+#archive .archive-field input::placeholder { color: #595959; opacity: 1; }
+#archive .archive-field button {
+  border-color: var(--dbim-wintergreen-dream);
+  background: var(--dbim-wintergreen-dream);
+  color: var(--dbim-white);
+  font-weight: 700;
+  cursor: pointer;
+}
+#archive .archive-field button:hover { background: var(--dbim-powder-blue); border-color: var(--dbim-powder-blue); }
+#archive input:focus-visible,
+#archive select:focus-visible,
+#archive button:focus-visible,
+#archive a:focus-visible {
+  outline: 4px solid #000;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px #FFBF47;   /* yellow halo, visible on any background */
+}
+
+/* ---------- Section tabs ---------- */
+#archive .archive-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8rem;
+  margin: 0 0 1.6rem;
+  border-bottom: 2px solid var(--dbim-wintergreen-dream);
+}
+#archive .archive-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: .8rem;
+  min-height: 4.4rem;
+  margin-bottom: -2px;
+  padding: .8rem 1.8rem;
+  background: var(--dbim-white);
+  border: 2px solid var(--dbim-azureish-white);
+  border-bottom-color: var(--dbim-wintergreen-dream);
+  border-radius: .6rem .6rem 0 0;
+  color: var(--dbim-wintergreen-dream);
+  font: inherit;
+  font-size: var(--dbim-fs-p1);
+  font-weight: 700;
+  cursor: pointer;
+}
+#archive .archive-tab:hover { background: var(--dbim-section-bg); }
+#archive .archive-tab[aria-pressed="true"] { background: var(--dbim-wintergreen-dream); border-color: var(--dbim-wintergreen-dream); color: var(--dbim-white); }
+#archive .archive-count {
+  display: inline-block;
+  min-width: 2.6rem;
+  padding: .1rem .7rem;
+  border-radius: 1.2rem;
+  background: var(--dbim-powder-blue);
+  color: var(--dbim-white);
+  font-size: 1.3rem;
+  line-height: 1.6;
+  text-align: center;
+}
+#archive .archive-tab[aria-pressed="true"] .archive-count { background: var(--dbim-white); color: var(--dbim-wintergreen-dream); }
+
+/* ---------- Results line ---------- */
+#archive .archive-status { display: block; margin: .8rem 0 1.6rem; color: var(--dbim-dark-text); font-size: var(--dbim-fs-p1); font-weight: 700; line-height: 1.5; }
+#archive .archive-empty-msg { display: block; padding: 1.6rem; border: 1px dashed var(--dbim-grey-02); border-radius: .6rem; background: var(--dbim-surface-grey); }
+#archive .archive-empty-msg[hidden] { display: none; }
+
+/* ---------- Table ---------- */
+.archive-table-wrap { width: 100%; overflow-x: auto; }
+#archive table.archive-table { width: 100%; margin: 0 0 2rem; border-collapse: collapse; font-size: var(--dbim-fs-p1); }
+#archive .archive-table th,
+#archive .archive-table td { padding: 1rem 1.2rem; border: 1px solid var(--dbim-line); text-align: left; vertical-align: top; line-height: 1.5; }
+#archive .archive-table thead th { background: var(--dbim-wintergreen-dream); border-color: var(--dbim-wintergreen-dream); color: var(--dbim-white); font-weight: 700; white-space: nowrap; }
+#archive .archive-table tbody tr:nth-child(odd) td { background: var(--dbim-surface-tint); }
+#archive .archive-table tbody tr:hover td { background: var(--dbim-azureish-white-bg); }
+#archive .archive-sno { width: 7rem; text-align: center; }
+#archive .archive-date { width: 12rem; white-space: nowrap; }
+#archive .archive-section { width: 17rem; }
+#archive .archive-table td a { color: var(--dbim-powder-blue); text-decoration: none; }
+#archive .archive-table td a:hover { text-decoration: underline; }
+#archive .archive-table .file-type { color: var(--dbim-text-muted); font-size: var(--dbim-fs-p2); }
+#archive .archive-section-link {
+  display: inline-block;
+  padding: .3rem .9rem;
+  border-radius: .4rem;
+  background: var(--dbim-powder-blue);
+  color: var(--dbim-white) !important;
+  font-size: var(--dbim-fs-p2);
+  font-weight: 600;
+  line-height: 1.4;
+}
+#archive .archive-section-link:hover { background: var(--dbim-wintergreen-dream); text-decoration: underline; }
+#archive mark { background: #FFE58A; color: inherit; padding: 0 .1em; }
+
+/* ---------- Pager ---------- */
+#archive .archive-pager { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
+#archive .archive-pager button {
+  min-width: 4.4rem;
+  height: 4.4rem;
+  padding: 0 1.2rem;
+  border: 2px solid var(--dbim-azureish-white);
+  border-radius: .6rem;
+  background: var(--dbim-white);
+  color: var(--dbim-wintergreen-dream);
+  font: inherit;
+  font-size: var(--dbim-fs-p1);
+  font-weight: 700;
+  cursor: pointer;
+}
+#archive .archive-pager button:hover:not([disabled]) { background: var(--dbim-azureish-white-bg); }
+#archive .archive-pager button[aria-current="page"] { background: var(--dbim-wintergreen-dream); border-color: var(--dbim-wintergreen-dream); color: var(--dbim-white); }
+#archive .archive-pager button[disabled] { opacity: .45; cursor: default; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 991.98px) {
+  #archive .archive-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #archive .archive-field-search { grid-column: 1 / -1; }
+}
+@media (max-width: 575.98px) {
+  #archive .archive-controls { grid-template-columns: 1fr; padding: 1.6rem; }
+  #archive .archive-tab { flex: 1 1 auto; justify-content: center; padding: .8rem 1rem; }
+  /* table becomes stacked cards */
+  #archive .archive-table thead { position: absolute; left: -9999px; }
+  #archive .archive-table, #archive .archive-table tbody, #archive .archive-table tr, #archive .archive-table td { display: block; width: 100%; }
+  #archive .archive-table tr { margin-bottom: 1.2rem; border: 1px solid var(--dbim-line); border-radius: .6rem; overflow: hidden; }
+  #archive .archive-table td { border: 0; border-bottom: 1px solid var(--dbim-line); padding-left: 1.2rem !important; }
+  #archive .archive-table td:last-child { border-bottom: 0; }
+  #archive .archive-sno { display: none !important; }
+  #archive .archive-date::before { content: "Date: "; font-weight: 700; }
+}
+/* the site's old responsive.css turns every table into blocks with 50% left padding — undo it here */
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  #archive .archive-table td { padding-left: 1.2rem; }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  #archive .archive-table { display: table; }
+  #archive .archive-table thead { display: table-header-group; position: static; }
+  #archive .archive-table tbody { display: table-row-group; }
+  #archive .archive-table tr { display: table-row; }
+  #archive .archive-table th, #archive .archive-table td { display: table-cell; }
+}
+
+html.ux4g-dark-contrast #archive .archive-controls,
+html.ux4g-dark-contrast #archive .archive-table td { background: #000 !important; }
+
+/* rows filtered out or on another page stay hidden whatever the layout */
+#archive .archive-table tr[hidden] { display: none !important; }
+#archive .archive-table-wrap[hidden] { display: none !important; }
+/* old responsive.css positions td::before absolutely; keep the mobile "Date:" label inline */
+#archive .archive-table td::before { position: static; width: auto; padding: 0; }
+#archive .archive-table, #archive .archive-table * { box-sizing: border-box; }
